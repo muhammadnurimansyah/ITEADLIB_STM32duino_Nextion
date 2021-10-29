@@ -63,6 +63,4 @@ void loop(void)
     s0.addValue(1, CH1_OFFSET + ch1_data);
     s0.addValue(2, CH2_OFFSET + ch2_data);
     s0.addValue(3, CH3_OFFSET + ch3_data);
-    
 }
-
