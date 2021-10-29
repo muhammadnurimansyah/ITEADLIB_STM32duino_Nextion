@@ -1,6 +1,6 @@
 @mainpage Home Page
 
-# Nextion
+# Nextion Library for STM32
 
 --------------------------------------------------------------------------------
 
@@ -57,50 +57,10 @@ can be open in your browser such as Chrome, Firefox or any one you like.
 
 # Suppported Mainboards
 
-**All boards, which has one or more hardware serial, can be supported.**
-
-For example:
-
-  - Iteaduino MEGA2560
-  - Iteaduino UNO
-  - Arduino MEGA2560
-  - Arduino UNO
-
-# Configuration
-
-In configuration file NexConfig.h, you can find two macros below:
-
-  - dbSerial: Debug Serial (baudrate:9600), needed by beginners for debug your 
-    nextion applications or sketches. If your complete your work, it will be a 
-    wise choice to disable Debug Serial.
-
-  - nexSerial: Nextion Serial, the bridge of Nextion and your mainboard.
-
-**Note:** the default configuration is for MEGA2560.
-
-## Redirect dbSerial and nexSerial
-
-If you want to change the default serial to debug or communicate with Nextion ,
-you need to modify the line in configuration file:
-
-	#define dbSerial Serial    ---> #define dbSerial Serialxxx
-    #define nexSerial Serial2  ---> #define nexSeria Serialxxx
-
-## Disable Debug Serial
-
-If you want to disable the debug information,you need to modify the line in 
-configuration file:
-
-    #define DEBUG_SERIAL_ENABLE ---> //#define DEBUG_SERIAL_ENABLE
-
-# UNO-like Mainboards
-
-If your board has only one hardware serial, such as UNO, you should disable 
-dbSerial and redirect nexSerial to Serial(Refer to section:`Serial configuration`). 
-
-# Useful Links
-
-<http://blog.iteadstudio.com/nextion-tutorial-based-on-nextion-arduino-library/>
+  - All STM32 Variant
+  Following this step by step tutorial:
+  
+  https://nextion.ca/portfolio-items/nextion-iteadlib-and-stm32-step-by-step/
 
 # License
 
