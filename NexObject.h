@@ -16,6 +16,9 @@
 #ifndef __NEXOBJECT_H__
 #define __NEXOBJECT_H__
 #include <Arduino.h>
+#include <stdlib.h>
+extern "C" char* utoa(int a, char* buffer, unsigned char radix);
+extern "C" char* ltoa(int a, char* buffer, unsigned char radix);
 #include "NexConfig.h"
 /**
  * @addtogroup CoreAPI 
